@@ -1,10 +1,13 @@
+import javax.jws.WebService;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet("/HelloServlet")   //使用注解的方式部署servlet
 public class HelloServlet extends HttpServlet {
     private String message;
 
