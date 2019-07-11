@@ -12,5 +12,6 @@
   </head>
   <body>
   $END$
+  中文啊
   </body>
 </html>

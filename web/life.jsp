@@ -30,6 +30,7 @@
 
     <%
         serviceVar++;
+//        而范德萨范德萨
         System.out.println("_jspService(): JSP共响应了"+serviceVar+"次请求");
         String content1="初始化次数 : "+initVar;
         String content2="响应客户请求次数 : "+serviceVar;
