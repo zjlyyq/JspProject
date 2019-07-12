@@ -13,9 +13,14 @@
 <body>
     <%
         String params = request.getQueryString();
+        response.setCharacterEncoding("utf-8");
+//        out.print(params);
     %>
     <p>
         通过隐式对象request获取到的请求参数是<%=params%>
     </p>
+    <%--通过向application中添加属性，则所有组成您web应用的JSP文件都能访问到这些属性    --%>
+    <% application.setAttribute("year",2017);%>
+    <%=application.getAttribute("year") %>
 </body>
 </html>

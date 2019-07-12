@@ -43,5 +43,10 @@
         </jsp:fallback>
 
     </jsp:plugin>
+    <%--通过向application中添加属性，则所有组成您web应用的JSP文件都能访问到这些属性    --%>
+    <p>
+        通过向objects.jsp页面的application中添加属性，则所有组成您web应用的JSP文件都能访问到这些属性:
+        <%=application.getAttribute("year") %>
+    </p>
 </body>
 </html>
