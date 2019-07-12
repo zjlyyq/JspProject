@@ -12,10 +12,11 @@
 </head>
 <body>
     <%
-<%--        设定响应的字符集编码以支持中文--%>
+//        设定响应的字符集编码以支持中文
+        response.sendError(407, "Need authentication!!!" );
         response.setCharacterEncoding("UTF-8");
         out.println("张嘉璐");
-<%--    通知浏览器4秒刷新一次--%>
+        //通知浏览器4秒刷新一次
         response.setIntHeader("Refresh",4);
         Date date = new Date();
         out.println("现在时间是：");
