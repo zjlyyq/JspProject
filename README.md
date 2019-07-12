@@ -23,3 +23,14 @@
    > 2. 默认包的class无法被使用，必须先建个包
 
 2. setProperty：用来设置已经实例化的Bean对象的属性
+
+   + 在useBean外部使用
+
+     ```
+     
+     ```
+
+   + 在useBean内部使用
+
+3. getProperty
+

@@ -16,12 +16,16 @@
     <jsp:include page="index.jsp"></jsp:include>
     <%--<jsp:useBean>动作元素--%>
     <jsp:useBean id="people" class="com.zjltcb.main.People"></jsp:useBean>
+    <jsp:setProperty name="people" property="age" value="20"></jsp:setProperty>
     <%
         People p = new People();
         p.setAge("12");
         p.setName("张嘉璐");
+        People p2 = new People();
+
     %>
     <br>
-    <textarea><%= p.getName() + p.getAge() + "岁"%></textarea>
+    <textarea><%= p.getName() + p.getAge() + "岁"%></textarea><br>
+    <textarea><%= p2.getName() + p2.getAge() + "岁"%></textarea>
 </body>
 </html>
