@@ -22,5 +22,9 @@
     <%--通过向application中添加属性，则所有组成您web应用的JSP文件都能访问到这些属性    --%>
     <% application.setAttribute("year",2017);%>
     <%=application.getAttribute("year") %>
+
+    <%--config对象--%>
+    <% String servlet = config.getServletName();%>
+    <p>Servlet名字是：<%=servlet%></p>
 </body>
 </html>
