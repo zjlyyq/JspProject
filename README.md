@@ -34,3 +34,6 @@
 
 3. getProperty
 
+4. forward：把请求转到另外的页面。jsp:forward标记只有一个属性page
+
+5. 

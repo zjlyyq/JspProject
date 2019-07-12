@@ -27,5 +27,8 @@
     <br>
     <textarea><%= p.getName() + p.getAge() + "岁"%></textarea><br>
     <textarea><%= p2.getName() + p2.getAge() + "岁"%></textarea>
+
+    <%--<jsp:forward>--%>
+    <<jsp:forward page="index.jsp"></jsp:forward>
 </body>
 </html>
