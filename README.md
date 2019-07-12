@@ -37,3 +37,15 @@
 4. forward：把请求转到另外的页面。jsp:forward标记只有一个属性page
 
 5. plugin：不知道怎么用
+
+
+
+### 隐式对象
+
+JSP隐式对象是JSP容器为每个页面提供的Java对象，开发者可以直接使用它们而不用显式声明。JSP隐式对象也被称为预定义变量。
+
+1. request对象：request对象是javax.servlet.http.HttpServletRequest 类的实例。每当客户端请求一个JSP页面时，JSP引擎就会制造一个新的request对象来代表这个请求。
+
+   request对象提供了一系列方法来获取HTTP头信息，cookies，HTTP方法等等。
+
+
