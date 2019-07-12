@@ -29,6 +29,19 @@
     <textarea><%= p2.getName() + p2.getAge() + "岁"%></textarea>
 
     <%--<jsp:forward>--%>
-    <<jsp:forward page="index.jsp"></jsp:forward>
+<%--    <<jsp:forward page="index.jsp"></jsp:forward>--%>
+    <jsp:plugin type="applet" codebase="dirname" code="MyApplet.class"
+                width="60" height="80">
+
+        <jsp:params>
+            <jsp:param name="fontcolor" value="red" />
+            <jsp:param name="background" value="black" />
+        </jsp:params>
+
+        <jsp:fallback>
+            Unable to initialize Java Plugin
+        </jsp:fallback>
+
+    </jsp:plugin>
 </body>
 </html>

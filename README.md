@@ -36,4 +36,4 @@
 
 4. forward：把请求转到另外的页面。jsp:forward标记只有一个属性page
 
-5. 
+5. plugin：不知道怎么用
